@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Staatliches", cursive;
+  margin: 25vh;
+  background-image: radial-gradient(
+    circle,
+    #f0ba22,
+    #efa42b,
+    #eb8f35,
+    #e27c3d,
+    #d66a45,
+    #d56c50,
+    #d36e5a,
+    #d17163,
+    #dd8575,
+    #e99a88,
+    #f4ae9c,
+    #ffc2b1
+  );
+}
+
+.texto-principal {
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: #000;
+  text-shadow: 0 0 0.2em #f2f2f2, 0 0 0.2em #f2f2f2;
+}
+
+form {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 37%;
+  margin: auto;
+  padding: 30px;
+}
+
+.first, .second{
+  margin: 10px auto;
+}
+
+#texto {
+  margin: 10px;
+  padding: 7px;
+  border-radius: 7px;
+  border: 1px solid #d17163;
+}
+
+input{
+  margin: 3px auto;
+}
+
+label {
+  text-align: center;
+  margin: 10px;
+  letter-spacing: 1px;
+  color: #000;
+  /* text-shadow: #f2f2f2 0.1em 0.1em 0.6em; */
+}
+
+#inc{
+  width: 50px;
+}
+
+button {
+  font-family: "Staatliches", cursive;
+  letter-spacing: 1px;
+  width: 20vh;
+  padding: 5px;
+  border: none;
+  border-radius: 7px;
+  margin: auto;
+  margin-top: 7px;
+  background: #ffc1b5;
+}
+
+button:hover {
+  background: #c2554f;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  form {
+    width: 80%;
+    padding: 20px;
+  }
+  .texto-principal {
+    font-size: 15px;
+  }
+  body {
+    margin: 100px auto;
+  }
+}

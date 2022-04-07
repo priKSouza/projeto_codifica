@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projeto 2 CDA</title>
+  </head>
+  <body>
+    <article>
+      <p class="texto-principal">Digite uma mensagem para ser codificada.</p>
+      <form>
+        <div class="first">
+          <input type="radio" id="codCeasar" name="opt" checked value="1" />
+          <label for="cod">Cesar</label>
+
+          <input type="radio" id="codBase" name="opt" value="2" />
+          <label for="cod">Base64</label>
+        </div>
+        <textarea
+          required
+          id="texto"
+          placeholder="Digite seu texto aqui:"
+        ></textarea>
+
+        <label
+          >Incremento: <input type="number" placeholder="nº" id="inc" required
+        /></label>
+        <div class="second">
+          <input type="radio" id="cdf" name="cdf" checked value="1" />
+          <label for="cdf">Codifica</label>
+
+          <input type="radio" id="cdf" name="cdf" value="2" />
+          <label for="cdf">Decodifica</label>
+        </div>
+        <button id="botao-enviar">Codificar</button>
+      </form>
+    </article>
+    <script src="./index.js"></script>
+  </body>
+</html>
