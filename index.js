@@ -77,3 +77,9 @@ function Decodificar(offset, texto) {
   }
   return resultD.join("");
 }
+
+document.getElementById("reset").addEventListener("click", resetar);
+function resetar() {
+  var sumir = document.querySelector(".resultado");
+  sumir.remove();
+}
