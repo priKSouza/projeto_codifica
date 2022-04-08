@@ -10,23 +10,26 @@
   <body>
     <article>
       <p class="texto-principal">Digite uma mensagem para ser codificada.</p>
+
       <form>
+        <textarea
+        required
+        id="texto"
+        placeholder="Digite seu texto aqui:"
+        ></textarea>
+        
+        <label
+        >Incremento: <input type="number" placeholder="nº" id="inc" required
+        /></label>
+        
         <div class="first">
           <input type="radio" id="codCeasar" name="opt" checked value="1" />
           <label for="cod">Cesar</label>
-
+          
           <input type="radio" id="codBase" name="opt" value="2" />
           <label for="cod">Base64</label>
         </div>
-        <textarea
-          required
-          id="texto"
-          placeholder="Digite seu texto aqui:"
-        ></textarea>
 
-        <label
-          >Incremento: <input type="number" placeholder="nº" id="inc" required
-        /></label>
         <div class="second">
           <input type="radio" id="cdf" name="cdf" checked value="1" />
           <label for="cdf">Codifica</label>

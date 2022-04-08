@@ -67,6 +67,9 @@ label {
 
 #inc{
   width: 50px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid #d17163;
 }
 
 button {
